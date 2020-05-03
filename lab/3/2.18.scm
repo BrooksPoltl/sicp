@@ -1,0 +1,6 @@
+(define (reverse l)
+  (if (equal? '() l)
+     '()
+     (append (reverse (cdr l)) (list (car l)))
+  )
+)
